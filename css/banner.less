@@ -1,0 +1,48 @@
+@import 'lesshat';
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #36260f url(../img/trees.png) repeat;	
+	.background-size(~'auto 60px');
+	color: #fff;
+}
+
+/* Obrazky v odkazu kolem sebe nemaji ramecek */
+a img {
+	border: 0;	
+}
+
+/* Odkaz pres celou plochu textu a tedy banneru */
+.text-anchor {
+	display: block;
+	color: #fff;
+	overflow: hidden;
+}
+
+
+/* Element s textem, ktery se pomoci display: table/table-cell hacku vertikalne centruje */
+.text {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	display: table;
+	
+	h1 {
+		margin: 0; 
+		padding: 0;
+	 	display: table-cell; 
+	  	vertical-align: middle;		
+	}	
+}
+
+/* Jelen */
+.deer {	
+	position: absolute;
+	bottom: -20px;
+	left: -20px;
+	height: 120px; /* Protoze chceme rozmery modifikovat podle rozmeru banneru, definujeme je v CSS */	
+	width: auto;
+}
