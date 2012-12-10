@@ -20,6 +20,7 @@ a img {
 }
 /* Element s textem, ktery se pomoci display: table/table-cell hacku vertikalne centruje */
 .text {
+  font-family: 'Grand Hotel', cursive;
   text-align: center;
   position: absolute;
   width: 100%;
