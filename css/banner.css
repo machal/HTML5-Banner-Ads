@@ -1,3 +1,4 @@
+@import 'animation.css';
 body {
   margin: 0;
   padding: 0;
@@ -58,19 +59,31 @@ a img {
   vertical-align: middle;
   position: relative;
   width: 100%;
-  /* Transition */
+  /* Jednoducha animace prijizdeni textu zprava */
 
   -webkit-transition: right .5s;
   -moz-transition: right .5s;
   -o-transition: right .5s;
   -ms-transition: right .5s;
   transition: right .5s;
+  /* Slozitejsi CSS animace padani textu zhora */
+
 }
 .simple-animation-start .text h1 {
   right: -100%;
 }
 .simple-animation-end .text h1 {
   right: 0;
+}
+.css-animation-init .text h1 {
+  top: -100%;
+}
+.css-animation-start .text h1 {
+  -webkit-animation: FallDown .4s;
+  -moz-animation: FallDown .4s;
+  -o-animation: FallDown .4s;
+  -ms-animation: FallDown .4s;
+  animation: FallDown .4s;
 }
 /* Jelen */
 .deer {
@@ -100,3 +113,6 @@ a img {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+/*
+   CSS animace
+*/

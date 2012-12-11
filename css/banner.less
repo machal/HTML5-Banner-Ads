@@ -1,4 +1,5 @@
 @import 'lesshat';
+@import 'animation.css';
 
 body {
 	margin: 0;
@@ -49,7 +50,8 @@ a img {
 	  	vertical-align: middle;		
 		position: relative;
 		width: 100%;
-		/* Transition */
+		
+		/* Jednoducha animace prijizdeni textu zprava */
 		.transition(~'right .5s');
 
 		.simple-animation-start & {			
@@ -59,6 +61,16 @@ a img {
 		.simple-animation-end & {
 			right: 0;
 		}	
+		
+		/* Slozitejsi CSS animace padani textu zhora */
+		.css-animation-init & {			
+			top: -100%;
+		}
+		
+		.css-animation-start & {
+			.animation(~'FallDown .4s')
+		}
+				
 	}		
 }
 
@@ -80,3 +92,6 @@ a img {
 	
 }
 
+/*
+   CSS animace
+*/
