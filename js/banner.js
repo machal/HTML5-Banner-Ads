@@ -1,9 +1,10 @@
 $(document).ready(function() {
 	
-	$('body').addClass('animation-start');
+	// Po nacteni dokumentu pridame tridu co startuje animaci
+	$('body').addClass('simple-animation-start');
 	
-	window.setTimeout(function(){ 
-		$('body').removeClass('animation-start').addClass('animation-end');
-	}, 5000);		
+	window.setInterval(function(){ 
+		$('body').toggleClass('simple-animation-start simple-animation-end');
+	}, 2000);		
 	
 });
