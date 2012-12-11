@@ -65,6 +65,11 @@ a img {
   height: 120px;
   /* Protoze chceme rozmery modifikovat podle rozmeru banneru, definujeme je v CSS */
   width: auto;
+  -webkit-transition: -webkit-transform .2s;
+  -moz-transition: -moz-transform .2s;
+  -o-transition: -o-transform .2s;
+  -ms-transition: -ms-transform .2s;
+  transition: transform .2s;
 }
 .deer:hover,
 .deer:focus,
