@@ -56,6 +56,21 @@ a img {
   padding: 0;
   display: table-cell;
   vertical-align: middle;
+  position: relative;
+  width: 100%;
+  /* Transition */
+
+  -webkit-transition: right .5s;
+  -moz-transition: right .5s;
+  -o-transition: right .5s;
+  -ms-transition: right .5s;
+  transition: right .5s;
+}
+.animation-start .text h1 {
+  right: -100%;
+}
+.animation-end .text h1 {
+  right: 0;
 }
 /* Jelen */
 .deer {
