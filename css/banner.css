@@ -1,4 +1,7 @@
 @import 'animation.css';
+/*
+	--- Base/Typoska ---
+*/
 body {
   margin: 0;
   padding: 0;
@@ -9,17 +12,22 @@ body {
   background-size: auto 60px;
   color: #fff;
 }
-/* Obrazky v odkazu kolem sebe nemaji ramecek */
 a img {
   border: 0;
+  /* Obrazky v odkazu kolem sebe nemaji ramecek */
+
 }
-/* Odkaz pres celou plochu textu a tedy banneru */
+/* 
+	--- Odkaz pres celou plochu banneru ---
+*/
 .text-anchor {
   display: block;
   color: #fff;
   overflow: hidden;
 }
-/* Element s textem, ktery se pomoci display: table/table-cell hacku vertikalne centruje */
+/* 
+	--- Element s textem ---
+*/
 .text {
   font-family: 'Grand Hotel', cursive;
   text-align: center;
@@ -27,6 +35,7 @@ a img {
   width: 100%;
   height: 100%;
   display: table;
+  /* pomoci display: table/table-cell hacku vertikalne centrujeme */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
   /* CSS3 gradient */
 
@@ -85,7 +94,9 @@ a img {
   -ms-animation: FallDown .4s;
   animation: FallDown .4s;
 }
-/* Jelen */
+/* 
+	--- Jelen ---
+*/
 .deer {
   position: absolute;
   bottom: -20px;
@@ -113,6 +124,26 @@ a img {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-/*
-   CSS animace
+/* 
+	--- Responsive ---
 */
+@media (min-height: 200px) and (min-width: 200px) {
+  .deer {
+    bottom: -10px;
+    left: -20px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .deer:hover,
+  .deer:focus,
+  .deer:active {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+}
